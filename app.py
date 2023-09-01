@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
 
 import streamlit as st 
-import numpy as np
-import pandas as pd
+from eda_app import run_eda_app
+from ml_app import run_ml_app
 
 def main():
 
@@ -13,12 +13,11 @@ def main():
     if choice == "Home":
         st.subheader("Home")
     elif choice == "탐색적 자료 분석":
-        st.subheader("탐색적 자료 분석")
+        run_eda_app()
     elif choice == "머신러닝":
-        st.subheader("머신러닝")
+        run_ml_app()
     else:
         st.subheader("About")
-
 
 if __name__ == "__main__":
     main()

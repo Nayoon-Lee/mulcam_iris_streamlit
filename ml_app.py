@@ -1,12 +1,12 @@
 # -*- coding:utf-8 -*-
 import streamlit as st 
-import joblib 
+import joblib # 모델 저장, 불러올 때 사용
 import os 
 import numpy as np 
 
 def run_ml_app():
     st.subheader("머신러닝")
-    st.write("hdhdhhdh")
+    st.write("머신러닝입니다")
 
     # layout 
     col1, col2 = st.columns(2)
